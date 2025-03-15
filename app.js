@@ -88,4 +88,21 @@ function sortearAmigo() {
     });
 }
 
+
+// Función para limpiar la lista de amigos
+function limpiarLista() {
+    // 1. Vaciar el arreglo de amigos
+    amigos = [];
+
+    // 2. Limpiar la lista de amigos en el HTML
+    const listaAmigos = document.getElementById("listaAmigos");
+    listaAmigos.innerHTML = "";
+
+    // 3. Limpiar la lista de resultados del sorteo
+    const listaResultados = document.getElementById("resultado");
+    listaResultados.innerHTML = "";
+
+    // Mensaje opcional para el usuario
+    alert("La lista de amigos se ha limpiado correctamente.");
+}
 //
